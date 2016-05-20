@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QPic</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<h3 style="text-align: center">QPic</h3>
+		<form class="form-horizontal no-margin" method="post" action="http://up.qiniu.com" enctype="multipart/form-data">
+		    <div class="form-group">
+	            <label class="col-md-2 control-label" for="token">token:</label>
+	            <div class="col-md-8">
+	            	<input class="form-control" id="token" name="token" class="ipt" value=""><a target="blank" href="http://jsfiddle.net/gh/get/extjs/4.2/icattlecoder/jsfiddle/tree/master/uptoken">Generate token online</a>
+	            </div>
+	        </div>
+	        <div class="form-group">
+	            <label class="col-md-2 control-label" for="key">key:</label>
+	            <div class="col-md-8">
+	            	<input class="form-control" name="key" class="ipt" value="">
+	        	</div>
+	        </div> 
+	        <div class="form-group">
+	            <label class="col-md-2 control-label" for="bucket">Picture:</label>
+	            <div class="col-md-8">
+	            	<input class="form-control" name="file" class="ipt" type="file" />
+	            </div>
+	        </div>
+	        <div class="form-group">
+	        	<div class="col-md-offset-1 col-md-1">
+		        	<button class="btn btn-info" type="submit" value="Submit">Submit</button>
+		        </div>
+	        </div>
+		</form>
+	</div>
+	<footer class="footer navbar-fixed-bottom ">
+	    <div class="container">
+	    	<p style="text-align: center">&copy; Ji Xiang 2016.5</p>
+	    </div>
+	</footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

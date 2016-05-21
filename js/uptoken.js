@@ -91,3 +91,7 @@ var ACCESS_KEY = ""; /* Your Qiniu accessKey */
 var SECRET_KEY = ""; /* Your Qiniu secretKey */
 var upToken = genUpToken(ACCESS_KEY, SECRET_KEY);
 $("#token").val(upToken);
+$("#key-btn").click(function() {
+    console.log((new Date()).getTime().toString());
+    $("#key").val((new Date()).getTime().toString());
+})

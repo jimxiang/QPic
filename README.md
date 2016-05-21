@@ -15,3 +15,31 @@ Recently, our course project need to manage a large number of pictures and we de
  3. Click the Load unpacked extension
  4. Choose the unpacked extension and install it
  5. Then you can see it in your extensions bar
+
+### Configuration
+ 1. Add your Bucket URL in 'ajax.js'. The following is the code fragment:   
+
+ ```
+ xhr.onreadystatechange = function(response) {
+     if (xhr.readyState == 4 && xhr.status == 200 && xhr.responseText != "") {
+         var blkRet = JSON.parse(xhr.responseText);
+         $("#result").html("http://xxxxxx.com/" + blkRet.key); /* Your Qiniu bucket url*/
+ ```
+ 
+ 2. Add your Bucket name in 'upload.js'. The following is a code fragment:
+
+ ```
+ var genUpToken = function(accessKey, secretKey) {
+    var deadline = Math.round(new Date().getTime() / 1000) + 1 * 3600;
+    var putPolicy = {
+        "scope": "", /* Your bucket name*/
+        "deadline": deadline
+    };   
+ ```
+ 
+ 3. Add your Qiniu's accessKey and secretKey in 'upload.js'. The following is a code fragment:
+
+ ```
+ var ACCESS_KEY = ""; /* Your Qiniu accessKey */
+ var SECRET_KEY = ""; /* Your Qiniu secretKey */
+ ```

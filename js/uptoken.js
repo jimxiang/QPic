@@ -94,4 +94,13 @@ $("#token").val(upToken);
 $("#key-btn").click(function() {
     console.log((new Date()).getTime().toString());
     $("#key").val((new Date()).getTime().toString());
-})
+});
+$("#copy").click(function() {
+    var aux = document.createElement("input");
+    aux.setAttribute("value", $("#result").html());
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+    document.body.removeChild(aux);
+    $("#copy-result").html("Copy succeed!");
+});

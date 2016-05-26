@@ -43,3 +43,6 @@ Recently, our course project need to manage a large number of pictures and we de
  var ACCESS_KEY = ""; /* Your Qiniu accessKey */
  var SECRET_KEY = ""; /* Your Qiniu secretKey */
  ```
+
+### How it looks
+![QPic]()

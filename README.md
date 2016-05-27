@@ -47,16 +47,17 @@ Recently, our course project need to manage a large number of pictures and we de
 ### How it looks
 ![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic1)
 
-The 'Key' is the picture's name that should be unique. You can choose fill it by a specific name or just generate it by clicking the 'Generate' button.   
+### How it works
+ 1. The 'Token' is generated automatically by the program. The 'Key' is the picture's name that should be unique. You can fill it by a specific name or just generate it by clicking the 'Generate' button.   
 
-![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic2)
+ ![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic2)
 
-Then, click 'Submit' button to submit it and you can get a URL.
+ 2. Then, click 'Submit' button to submit it and you can get a URL.
 
-![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic3)
+ ![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic3)
 
-There is a useful function that you can cilck the 'Copy to clipboard' button to copy the URL to clipboard. 
+ 3. There is a useful function that you can cilck the 'Copy to clipboard' button to copy the URL to clipboard. 
 
-![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic4)
+ ![qpic](http://o7bp9e1ec.bkt.clouddn.com/QPic4)
 
 Very useful, isn't it?
